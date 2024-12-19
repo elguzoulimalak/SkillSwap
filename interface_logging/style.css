@@ -34,8 +34,8 @@ body {
 .form-section {
     flex: 1; 
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content:center; 
+    align-items :center; 
     background-color: #f0f0f0;
     padding: 20px;
 }
@@ -102,4 +102,31 @@ body {
 
 .auth-container a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: #f0f0f0;
+    }
+    .image-section {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-color: #f0f0f0;
+    }
+}
+
+.gradient{
+    font-family :Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right,#4caf50,rgb(29, 101, 201));
+    background-clip: text; 
+    color: transparent;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
 }
