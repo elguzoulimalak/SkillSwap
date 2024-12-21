@@ -1,0 +1,169 @@
+.tete{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titre{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.titre .icon {
+    width: 25px; 
+    height: 25px;
+    margin-right: 10px; 
+}
+
+ .gradient{
+    font-family :Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right,#4fbe53,rgb(57, 137, 250));
+    background-clip: text; 
+    color: transparent;
+ }
+.liste ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 2rem;
+    margin-right: 30px;
+}
+.liste ul li {
+    color: black;
+}
+
+.liste a{
+    color: black;
+    text-decoration: none;
+}
+.liste a:hover{
+    color: rgb(20, 173, 200);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.liste ul li button{
+    border: 2px solid rgb(29, 152, 201);
+    border-radius: 10px;
+    color: rgb(29, 101, 201);
+    background-color: inherit;
+    width: 100px;
+    height: 25px;
+}
+.liste ul li button:hover{
+    background-color: rgb(20, 173, 200);
+    color: black;
+    cursor: pointer;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 50px 100px;
+    height: 70vh;
+}
+
+.body-content {
+    width: 50%;
+}
+
+.body-content h1 {
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.body-content p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.body-image img {
+    width: 600px;
+    border-radius: 50px;
+}
+
+
+.services {
+    text-align: center;
+    padding: 50px 100px;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    width: 30%;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .tete {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .liste ul {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    .body {
+        flex-direction: column;
+        text-align: center;
+    }
+    .body-content {
+        width: 90%;
+    }
+    .body-image img {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .services .service-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
