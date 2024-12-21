@@ -121,7 +121,7 @@ body {
 
 .gradient{
     font-family :Georgia, 'Times New Roman', Times, serif;
-    background-image: linear-gradient(to right,#4caf50,rgb(29, 101, 201));
+    background-image: linear-gradient(to right,#4fbe53,rgb(57, 137, 250));
     background-clip: text; 
     color: transparent;
 }
