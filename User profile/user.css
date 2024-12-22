@@ -70,6 +70,12 @@ transition: background-color 0.3s ease;
   display: flex;
   align-items: center;
 }
+.gradient a {
+  text-decoration: none; 
+  color: inherit; 
+  display: flex;
+  align-items: center;
+}
 .icones ul {
   list-style: none;
   padding: 0;
