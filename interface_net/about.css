@@ -97,18 +97,27 @@
 .services {
     text-align: center;
     padding: 50px 100px;
-    background-color: #fff;
+    background-color: #f8f9fa;
 }
 
 .services h2 {
     font-size: 36px;
+    font-family: 'Arial', sans-serif;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
 }
 
 .service-items {
+    margin-top: 3px;
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 .service-item {
@@ -117,19 +126,21 @@
 }
 
 .service-item img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
 }
 
 .service-item h3 {
     font-size: 24px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .service-item p {
     font-size: 16px;
     color: #666;
+    line-height: 1.5;
 }
 
 
@@ -140,30 +151,5 @@
     padding: 20px 0;
 }
 
-@media screen and (max-width: 768px) {
-    .tete {
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-    }
-    .liste ul {
-        flex-direction: column;
-        margin: 1rem 0;
-    }
-    .body {
-        flex-direction: column;
-        text-align: center;
-    }
-    .body-content {
-        width: 90%;
-    }
-    .body-image img {
-        width: 80%;
-        margin-top: 20px;
-    }
-    .services .service-items {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
+   
 
