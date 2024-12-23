@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
+  overflow-x:auto;
 }
 element.style {
   width: 1500px;
@@ -13,14 +13,18 @@ flex: 1;
 margin-left: 20px;
 }
 .navbar{
-  width: 100%;
+  min-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 0px 20px;
   gap: 20px;
   background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+   
 }
+
 .navbar h1{
   margin-left: 20px;
   margin-top: 25px;
@@ -123,7 +127,7 @@ transition: background-color 0.3s ease;
   padding: 0;
   display: flex;
   gap: 10px;
-  margin-top: 25px;
+  margin-top: 5px;
 
 }
 
@@ -209,7 +213,8 @@ transition: background-color 0.3s ease;
   }
 
   form {
-      max-width: 100%;
+      max-width: 300px;
+      margin-right: 800px;
   }
   .separator{
       display: none;
@@ -226,12 +231,6 @@ transition: background-color 0.3s ease;
       align-self: stretch; /* Étend le bouton pour prendre toute la largeur */
   }
 
-}
-
-@media screen and (min-width: 1200px) {
-  body{
-      background-color: #f0f0f0;
-  }
 }
 
 .container {
@@ -274,6 +273,10 @@ transition: background-color 0.3s ease;
   flex-shrink: 0;
   min-width: 150px;
   text-align: center;
+  padding: 8px 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
 .section {
   background-color: white;
