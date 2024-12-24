@@ -1,3 +1,67 @@
+.tete{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titre{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.titre .icon {
+    width: 25px; 
+    height: 25px;
+    margin-right: 10px; 
+}
+
+ .gradient{
+    font-family :Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right,#4fbe53,rgb(57, 137, 250));
+    background-clip: text; 
+    color: transparent;
+ }
+.liste ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 2rem;
+    margin-right: 30px;
+}
+.liste ul li {
+    color: black;
+}
+
+.liste a{
+    color: black;
+    text-decoration: none;
+}
+.liste a:hover{
+    color: rgb(20, 173, 200);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.liste ul li button{
+    border: 2px solid rgb(29, 152, 201);
+    border-radius: 10px;
+    color: rgb(29, 101, 201);
+    background-color: inherit;
+    width: 100px;
+    height: 25px;
+}
+.liste ul li button:hover{
+    background-color: rgb(20, 173, 200);
+    color: black;
+    cursor: pointer;
+}
+
 /* Styles généraux */
 body {
     font-family: Arial, sans-serif;
