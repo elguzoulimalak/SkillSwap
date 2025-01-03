@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SkillSwap</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="tete">
+        <div class="titre">
+            <h1 class ="gradient">
+                <img class="icon" src="../assets/icon.png" alt="Logo">
+                SkillSwap
+            </h1>
+        </div>
+        <div class="liste">
+            <ul>
+                <li><a href="./about.html">About</a> </li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./privacy.html">Privacy</a></li>
+                <li><button> <a href="../interface_logging/connexion.html">Login</a></button></li>
+                <li><button> <a href="../interface_inscription/inscription.html">Register </a> </button></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <h1>SkillSwap - Contactez-nous</h1>
+        <p>Une question ou un besoin spécifique ? Nous sommes là pour vous aider !</p>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Informations de contact</h2>
+            <ul>
+                <li><strong>Email :</strong> support@skillswap.com</li>
+                <li><strong>Téléphone :</strong> +212 6 99 99 99 99</li>
+                <li><strong>Adresse :</strong> Fès, Maroc</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Envoyez-nous un message</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="6" placeholder="Votre message ici..." required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SkillSwap. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

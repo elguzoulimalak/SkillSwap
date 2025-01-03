@@ -34,13 +34,13 @@ body {
 .form-section {
     flex: 1; 
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content:center; 
+    align-items :center; 
     background-color: #f0f0f0;
     padding: 20px;
 }
 
-/* Conteneur du formulaire */
+
 .auth-container {
     width: 100%;
     max-width: 400px;
@@ -102,4 +102,31 @@ body {
 
 .auth-container a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: #f0f0f0;
+    }
+    .image-section {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-color: #f0f0f0;
+    }
+}
+
+.gradient{
+    font-family :Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right,#4fbe53,rgb(57, 137, 250));
+    background-clip: text; 
+    color: transparent;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
 }
