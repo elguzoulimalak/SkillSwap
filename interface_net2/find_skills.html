@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap - Find Skills</title>
+    <link rel="stylesheet" href="find_skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="gradient"><a href="/Home/home.html"><img class="icon" src="/assets/swap.png" alt="Logo"></a></h1>
+        
+        <div class="icones">   
+            <div class="icones1">
+                <ul>
+                    <li><a href="/Home/home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/interface_net2/my_skills.html"><i class="fas fa-briefcase"></i> Skills</a></li>
+                    <li><a href="/interface_net2/find_skills.html" class="active"><i class="fas fa-search"></i> Find Skills</a></li>
+                    <li><a href="/interface_net/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        
+                </ul>
+            </div> 
+            <div class="separator">
+                <li></li>
+            </div>
+            <div class="icones2">
+                <label class="ui-switch">
+                <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                <div class="slider">
+                    <div class="circle"></div>
+                </div>
+                </label>
+                <li class="icone"><i class="fas fa-bell"></i><span class="tooltip">Notifications</span></li>
+                <li class="icone" onclick="toggleMenu()">
+                    <i class="fas fa-user"></i>
+                    <span class="tooltip">My profile</span>
+                </li>
+                <div class="menu" id="menu">
+                    <ul>
+                        <h4>Doha Bennani</h4>
+                        <li><a href="/User profile/user.html">My account</a></li>
+                        <li><a href="">Settings</li></a>
+                        <li><a href="">Help</li></a>
+                        <li><a href="/interface_logging/connexion.html">Logout</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="script.js"></script>
+
+    <main class="main-content">
+        <section class="search-section">
+            <h2>Find Skills</h2>
+            <p>Search and explore skills offered by our community!</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for skills... (e.g., Python, Photography)">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+
+        <section class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>Learn and master popular programming languages like Python, JavaScript, and C#.</p>
+                <a href="skill_detail.html">Explore</a>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-camera"></i>
+                <h3>Photography</h3>
+                <p>Discover tips, tricks, and techniques to take stunning photos.</p>
+                <a href="skill_detail.html">Explore</a>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Painting</h3>
+                <p>Unleash your creativity with painting tutorials and expert advice.</p>
+                <a href="skill_detail.html">Explore</a>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-language"></i>
+                <h3>Languages</h3>
+                <p>Learn new languages and improve your fluency in foreign dialects.</p>
+                <a href="skill_detail.html">Explore</a>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-music"></i>
+                <h3>Music</h3>
+                <p>Learn how to play instruments or improve your singing techniques.</p>
+                <a href="skill_detail.html">Explore</a>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-bread-slice"></i>
+                <h3>Cooking</h3>
+                <p>Explore recipes and learn cooking techniques from around the world.</p>
+                <a href="skill_detail.html">Explore</a>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <img  src="/assets/swap.png" alt="">
+        <h4>©  2025 SkillSwap. All Rights Reserved.</h4>
+    </div>
+</body>
+</html>
