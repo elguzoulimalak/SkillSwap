@@ -621,6 +621,23 @@ animation: color_anim 1s infinite 0.6s;
 transform: translateX(0%);
 animation: color_anim 1s infinite 0.4s;
 }
+.courses-list button {
+  display: flex; 
+  text-align: center;
+  flex-direction: column;
+  padding: 8px;
+  background-color: #0f528c44;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  max-width: 200px;
+  border-radius: 50px;
+  color: #000;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.courses-list button:hover {
+  background-color: #e0e0e0;
+}
 
 /* SVG animations */
 @keyframes color_anim {
@@ -650,4 +667,6 @@ animation: color_anim 1s infinite 0.4s;
   outline: 0.2em solid var(--color-background);
   outline-offset: 0;
 }
+
+
 }

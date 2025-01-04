@@ -30,4 +30,23 @@ function toggleMenu() {
       document.body.classList.remove("dark-mode");
       localStorage.setItem("dark-mode", "disabled");
     }
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".courses-list button");
+      const cards = document.querySelectorAll(".card");
+    
+      buttons.forEach(button => {
+        button.addEventListener("click", () => {
+          const category = button.getAttribute("data-category");
+    
+          cards.forEach(card => {
+            if (category === "All" || card.classList.contains(category)) {
+              card.style.display = "block"; // Affiche la carte
+            } else {
+              card.style.display = "none"; // Cache la carte
+            }
+          });
+        });
+      });
+    });
+    
   })
