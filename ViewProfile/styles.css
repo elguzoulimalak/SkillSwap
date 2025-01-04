@@ -1,0 +1,70 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e8f0fe;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a73e8;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Profile Cards */
+.profile {
+    background: linear-gradient(145deg, #ffffff, #dfe3e9);
+    border: 1px solid #c3cfd9;
+    border-radius: 12px;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.7);
+}
+
+.profile:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), -6px -6px 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Profile Image */
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #1a73e8;
+    margin-bottom: 10px;
+}
+
+/* Profile Name */
+.profile h3 {
+    margin: 0;
+    color: #1a73e8;
+    font-size: 18px;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0c47a1;
+}
