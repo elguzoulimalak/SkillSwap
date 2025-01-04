@@ -9,29 +9,45 @@
 </head>
 <body>
     <div class="navbar">
-        <h1 class="gradient"><a href="user.html"><img class="icon" src="../assets/icon.png" alt="Logo">SkillSwap</a></h1>
-        <div class="search-container">
-            <form action="/search" >
-              <input type="text" class="search-input" placeholder="Search">
-              <button type="submit" class="search-button">🔍</button>
-            </form>
-        </div>
-      <nav class="icones">
+        <h1 class="gradient"><a href="/Home/home.html"><img class="icon" src="/assets/swap.png" alt="Logo"></a></h1>
+        
+  <div class="icones">   
+    <div class="icones1">
         <ul>
-          <li><a href=""><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="/Home/home.html"><i class="fas fa-home"></i> Home</a></li>
           <li><a href=""><i class="fas fa-briefcase"></i> Skills</a></li>
+          <li><a href="/interface_net/about.html"><i class="fas fa-search"></i> Find Skills</a></li>
           <li><a href="/interface_contact/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-          <li><a href=""><i class="fas fa-info-circle"></i> About</a></li>
+        
         </ul>
-      </nav> 
+      </div> 
        <div class="separator">
           <li></li>
         </div>
       <div class="icones2">
-          <li class="icone"><button href=""><i class="fas fa-moon"></i></button><span class="tooltip">Dark mode</span></li>
-          <li class="icone"><i class="fas fa-bell"></i><span class="tooltip">Notifications</span></li>
-          <li class="icone"><i class="fas fa-user"></i><span class="tooltip">My profile</span></li>
+        <label class="ui-switch">
+  <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+  <div class="slider">
+    <div class="circle"></div>
+  </div>
+</label>
+        <li class="icone"><i class="fas fa-bell"></i><span class="tooltip">Notifications</span></li>
+        <li class="icone" onclick="toggleMenu()">
+            <i class="fas fa-user"></i>
+            <span class="tooltip">My profile</span>
+        </li>
+        
+      <div class="menu" id="menu">
+        <ul>
+          <h4>Doha Bennani</h4>
+            <li><a href="/User profile/user.html">My account</a></li>
+            <li><a href="">Settings</li></a>
+            <li><a href="">Help</li></a>
+            <li><a href="/interface_logging/connexion.html">Logout</li></a>
+        </ul>
       </div>
+    </div>
+  </div>
       
     </div>
     <div class="container">
@@ -85,7 +101,7 @@
             <p>No Active Learnings Found</p>
         </div>
 
-        
+
 
         <div class="section">
             <h3>Leaderboard</h3>
@@ -97,5 +113,6 @@
             <p>No Badge Found</p>
         </div>
     </div>
+    <script src="user.js"></script>
 </body>
 </html>
