@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap - My Skills</title>
+    <link rel="stylesheet" href="my_skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="gradient"><a href="/Home/home.html"><img class="icon" src="/assets/swap.png" alt="Logo"></a></h1>
+        
+        <div class="icones">   
+            <div class="icones1">
+                <ul>
+                    <li><a href="/Home/home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/interface_net2/my_skills.html" class="active"><i class="fas fa-briefcase"></i> Skills</a></li>
+                    <li><a href="/interface_net2/find_skills.html"><i class="fas fa-search"></i> Find Skills</a></li>
+                    <li><a href="/interface_net/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        
+                </ul>
+            </div> 
+            <div class="separator">
+                <li></li>
+            </div>
+            <div class="icones2">
+                <label class="ui-switch">
+                <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                <div class="slider">
+                    <div class="circle"></div>
+                </div>
+                </label>
+                <li class="icone"><i class="fas fa-bell"></i><span class="tooltip">Notifications</span></li>
+                <li class="icone" onclick="toggleMenu()">
+                    <i class="fas fa-user"></i>
+                    <span class="tooltip">My profile</span>
+                </li>
+                <div class="menu" id="menu">
+                    <ul>
+                        <h4>Doha Bennani</h4>
+                        <li><a href="/User profile/user.html">My account</a></li>
+                        <li><a href="">Settings</li></a>
+                        <li><a href="">Help</li></a>
+                        <li><a href="/interface_logging/connexion.html">Logout</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="script.js"></script>
+
+    <main class="main-content">
+        <section class="skills-header">
+            <h2>My Skills</h2>
+            <p>Manage the skills you have shared with the community or add new ones!</p>
+            <button class="add-skill-btn">+ Add New Skill</button>
+        </section>
+
+        <section class="skills-list">
+            <div class="skill-item">
+                <div class="skill-info">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>I share my knowledge in Python, JavaScript, and other programming languages.</p>
+                </div>
+                <div class="skill-actions">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <i class="fas fa-camera"></i>
+                    <h3>Photography</h3>
+                    <p>Helping others improve their photography skills.</p>
+                </div>
+                <div class="skill-actions">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <i class="fas fa-language"></i>
+                    <h3>Languages</h3>
+                    <p>Fluent in French and Spanish, teaching language enthusiasts.</p>
+                </div>
+                <div class="skill-actions">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <img  src="/assets/swap.png" alt="">
+        <h4>©  2025 SkillSwap. All Rights Reserved.</h4>
+    </div>
+</body>
+</html>
