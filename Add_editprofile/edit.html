@@ -10,12 +10,33 @@
 <body>
     <div class="div-mere">
 <div class="navbar">
-        <h1 class="gradient"><a href="/User profile/user.html"><img class="icon" src="../assets/icon.png" alt="Logo">SkillSwap</a></h1>
-        <div class="icone">
-            <h6>Doha Bennani</h6>
-            <img src="/assets/picprofile.png" alt="">
+        <a href="/Home/home.html"><img class="icon" src="../assets/swap.png" alt="Logo"></a>
+
+    <div class="icones2">
+      <label class="ui-switch">
+        <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+        <div class="slider">
+          <div class="circle"></div>
         </div>
+      </label>
+    <li class="icone" onclick="toggleMenu()">
+    <div class="iconep">
+      <h6>Doha Bennani</h6>
+      <img src="/assets/picprofile.png" alt="">
+  </div>
+  </li>
+  
+<div class="menu" id="menu">
+  <ul>
+      <li><a href="/User profile/user.html">My account</a></li>
+      <li><a href="">Settings</li></a>
+      <li><a href="">Help</li></a>
+      <li><a href="/interface_logging/connexion.html">Logout</li></a>
+  </ul>
 </div>
+  </div>
+</div>
+
 <div class="rectangle">
         <h2>Personal Details</h2>
         <form>
@@ -118,5 +139,8 @@
                 
 </div>
 </div>
+</div>
+<script src="edit.js"></script>
+
 </body>
 </html> 
