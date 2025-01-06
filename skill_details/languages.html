@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap - Skill Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1 class="gradient"><a href="/Home/home.html"><img class="icon" src="/assets/swap.png" alt="Logo"></a></h1>
+        
+        <div class="icones">   
+            <div class="icones1">
+                <ul>
+                    <li><a href="/Home/home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/interface_net2/my_skills.html"><i class="fas fa-briefcase"></i> Skills</a></li>
+                    <li><a href="/interface_net2/find_skills.html" class="active"><i class="fas fa-search"></i> Find Skills</a></li>
+                    <li><a href="/interface_contact/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        
+                </ul>
+            </div> 
+            <div class="separator">
+                <li></li>
+            </div>
+            <div class="icones2">
+                <label class="ui-switch">
+                <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                <div class="slider">
+                    <div class="circle"></div>
+                </div>
+                </label>
+                <li class="icone"><i class="fas fa-bell"></i><span class="tooltip">Notifications</span></li>
+                <li class="icone" onclick="toggleMenu()">
+                    <i class="fas fa-user"></i>
+                    <span class="tooltip">My profile</span>
+                </li>
+                <div class="menu" id="menu">
+                    <ul>
+                        <h4>Doha Bennani</h4>
+                        <li><a href="/User profile/user.html">My account</a></li>
+                        <li><a href="">Settings</li></a>
+                        <li><a href="">Help</li></a>
+                        <li><a href="/interface_logging/connexion.html">Logout</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="/interface_net2/script.js"></script>
+
+    <!-- Skill Details Section -->
+    <main class="main-content">
+        <section class="skill-details">
+            <div class="skill-header">
+                <i class="fas fa-language"></i>
+                <h2>Languages</h2>
+                <p>Master new languages and improve your fluency with experienced tutors!</p>
+            </div>
+        </section>
+
+        <!-- Users Offering the Skill -->
+        <section class="users-list">
+            <h3>Users Offering This Skill</h3>
+            <div class="user-card">
+                <div class="user-info">
+                    <img src="/assets/user1.jpg" alt="User Photo">
+                    <h4>CARTER Sophia</h4>
+                    <p>Italian teacher passionate about culture and communication.</p>
+                </div>
+                <div class="user-actions">
+                    <button class="details-btn">View Profile</button>
+                </div>
+            </div>
+
+            <div class="user-card">
+                <div class="user-info">
+                    <img src="/assets/user2.jpg" alt="User Photo">
+                    <h4>MELODI Lara</h4>
+                    <p>Expert in Mandarin and Cantonese offering personalized lessons.</p>
+                </div>
+                <div class="user-actions">
+                    <button class="details-btn">View Profile</button>
+                </div>
+            </div>
+
+            <div class="user-card">
+                <div class="user-info">
+                    <img src="/assets/user3.jpg" alt="User Photo">
+                    <h4>BENZAKOUR Hamid</h4>
+                    <p>Language coach teaching Spanish and French to beginners.</p>
+                </div>
+                <div class="user-actions">
+                    <button class="details-btn">View Profile</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <img  src="/assets/swap.png" alt="">
+        <h4>©  2025 SkillSwap. All Rights Reserved.</h4>
+    </div>
+</body>
+</html>
