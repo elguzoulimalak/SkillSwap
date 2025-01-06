@@ -10,14 +10,14 @@
 </head>
 <body>
   <div class="navbar">
-        <a href="/Home/home.html"><img class="icon" src="/assets/swap.png" alt="Logo"></a>
+        <h1 class="gradient"><a href="/Home/home.html"><img class="icon" src="/assets/swap.png" alt="Logo"></a></h1>
         
   <div class="icones">   
     <div class="icones1">
         <ul>
           <li><a href="/Home/home.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="/interface_net2/my_skills.html"><i class="fas fa-briefcase"></i> Skills</a></li>
-          <li><a href="/interface_net2/find_skills.html"><i class="fas fa-search"></i> Find Skills</a></li>
+          <li><a href=""><i class="fas fa-briefcase"></i> Skills</a></li>
+          <li><a href="/interface_net/about.html"><i class="fas fa-search"></i> Find Skills</a></li>
           <li><a href="/interface_net/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
         
         </ul>
@@ -58,26 +58,26 @@
       <button class="all-courses-button" onclick="toggleCourses()"><h5>All Skills </h5>
         <img src="https://api.iconify.design/prime:chevron-down.svg?color=%23888888" alt="">
         </button></div>
-        <div class="courses-list" id="courses-list">
-          <button data-category="Web-Development">Web Development</button>
-          <button data-category="Data-Science">Data Science</button>
-          <button data-category="Graphic-Design">Graphic Design</button>
-          <button data-category="AI-Machine-Learning">AI & Machine Learning</button>
-          <button data-category="Marketing">Marketing</button>
-          <button data-category="Photography">Photography</button>
-          <button data-category="All">All Skills</button>
+        <div class="skills-list" id="skills-list">
+          <button class="skill-button" data-category="Web-Development">Web Development</button>
+          <button class="skill-button" data-category="Graphic-Design">Graphic Design</button>
+          <button class="skill-button" data-category="AI-Machine-Learning">AI & Machine Learning</button>
+          <button class="skill-button" data-category="Data-Science">Data Science</button>
+          <button class="skill-button" data-category="Marketing">Marketing</button>
+          <button class="skill-button" data-category="Photography">Photography</button>
         </div></div>
     </div>
-    <div class="cards">
 
-      <div class="card Marketing" >
+    <div class="skills-cards">
+
+      <div class="skill-card" data-category="Marketing">
         <img src="/assets/image1.jpeg" alt=" Image">
         <h3>Marketing</h3>
         <div class="profile">
             <div class="profile-photo">
                 <img src="/assets/picprofile.png" alt="">
             </div>
-        <a href="../ViewProfile/Malak.html" >El Guzouli Malak</a>
+        <a href="" >El Guzouli Malak</a>
         </div>
         <h5>Skill wanted : Game Development </h5>
         <div class="tooltip-container">
@@ -101,14 +101,14 @@
         
       </div>
 
-      <div class="card Data-Science">
+      <div class="skill-card" data-category="Data-Science">
         <img src="/assets/img.jpeg" alt=" Image">
         <h3>Data Science</h3>
         <div class="profile">
           <div class="profile-photo">
               <img src="/assets/picprofile.png" alt="">
           </div>
-        <a href="../ViewProfile/Mohamed.html" >Wali Alami Mohammed</a>
+        <a href="" >Wali Alami Mohammed</a>
         </div>
         <h5>Skill wanted : Mental Health Awareness</h5>
         <div class="tooltip-container">
@@ -131,14 +131,14 @@
         </div>
       </div>
 
-      <div class="card AI-&-Machine-Learning">
+      <div class="skill-card" data-category="AI-Machine-Learning">
         <img src="/assets/img2.jpeg" alt=" Image">
         <h3>AI & Machine Learning</h3>
         <div class="profile">
           <div class="profile-photo">
               <img src="/assets/picprofile.png" alt="">
           </div>
-        <a href="../ViewProfile/Nacer.html" >El Hallaoui Nacer</a>
+        <a href="" >El Hallaoui Nacer</a>
         </div>
         <h5>Skill wanted : Japanese for Business</h5>
         <div class="tooltip-container">
@@ -160,14 +160,14 @@
         </div>
       </div>
 
-      <div class="card Graphic-Design">
+      <div class="skill-card" data-category="Graphic-Design">
         <img src="/assets/images.jpeg" alt=" Image">
         <h3>Graphic Design</h3>
         <div class="profile">
           <div class="profile-photo">
               <img src="/assets/picprofile.png" alt="">
           </div>
-        <a href="../ViewProfile/Doha.html" >Bennani Doha</a>
+        <a href="" >Bennani Doha</a>
         </div>
         <h5>Skill wanted : Cake Decoration</h5>
         <div class="tooltip-container">
@@ -229,10 +229,6 @@
       </a>
     
   </div>
-  <div class="footer">
-    <img  src="/assets/swap.png" alt="">
-    <h4>©  2025 SkillSwap. All Rights Reserved.</h4>
-</div>
     <script src="home.js"></script>
 
 </body>
