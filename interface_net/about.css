@@ -1,37 +1,34 @@
 body {
     font-family: Arial, sans-serif;
-    overflow-x:auto;
-  }
-.tete{
+    overflow-x: auto;
+}
+
+.tete {
     background-color: whitesmoke;
     width: 100%;
     height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.titre{
-    margin-left: 25px;
-    display: flex;
     align-items: center;
-    
-    
+    padding: 0 20px;
 }
 
 .titre .icon {
-    width: 140px; 
-    height: 40x;
-    margin-right: 1px; 
-    margin-bottom: 9px;
+    width: 120px;
+    height: 40px;
 }
-.liste1{
+
+.liste1 {
     display: flex;
-    gap: 20px
+    gap: 20px;
 }
-.liste2{
+
+.liste2 {
     display: flex;
+    gap: 10px;
 }
+
 .liste ul{
     list-style: none;
     display: flex;
@@ -40,44 +37,27 @@ body {
     margin-top: 2rem;
     margin-right: 10px;
 }
-.liste ul li {
+
+.navbar a, .navbar2 a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
-.navbar{
-    margin-left: 10px;
-}
-.navbar2{
-    margin-right: 10px;
-}
-.navbar a {
-    text-decoration: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-}
-.navbar2 a {
-    text-decoration: none;
-    color: rgb(10, 9, 9);
-}
 
-
-.liste a:hover{
-    color: #0f518c;
-    text-decoration: underline;
-    cursor: pointer;
-}
-.liste ul li button{
+.navbar2 button {
     border: 2px solid #0f518c;
     border-radius: 10px;
-    color: #ffffff;
     background-color: #0f518c;
+    color: white;
     width: 100px;
-    height: 25px;
-}
-.liste ul li button:hover{
-    background-color: #ffffff;
-    
-    color: rgb(255, 255, 255);
+    height: 30px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar2 button:hover {
+    background-color: white;
+    color: #0f518c;
 }
 
 .body {
@@ -86,11 +66,14 @@ body {
     justify-content: space-between;
     background-color: #f8f9fa;
     padding: 50px 100px;
-    height: 70vh;
+    height: auto;
+    flex-wrap: wrap;
 }
 
 .body-content {
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
 }
 
 .body-content h1 {
@@ -107,39 +90,28 @@ body {
 }
 
 .body-image img {
-    width: 600px;
+    width: 100%;
+    max-width: 500px;
     border-radius: 50px;
+    margin-top: 20px;
 }
-
 
 .services {
     text-align: center;
-    padding: 50px 100px;
+    padding: 50px 20px;
     background-color: #f8f9fa;
 }
 
-.services h2 {
-    font-size: 36px;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.services p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 40px;
-}
-
 .service-items {
-    margin-top: 3px;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
 }
 
 .service-item {
-    width: 30%;
+    width: 100%;
+    max-width: 300px;
     text-align: center;
 }
 
@@ -149,31 +121,57 @@ body {
     margin-bottom: 15px;
 }
 
-.service-item h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.service-item p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-}
-
-
 .footer {
     text-align: center;
     background-color: #333;
     color: white;
     padding: 30px 0;
-    display: flex;
+    flex-direction: column;
 }
-.footer p{
-    margin-left: 500px;
-    margin-top: 45px;
-}
-.footer img{
+
+.footer img {
     width: 100px;
-    margin-left: 20px;
+    margin: 0 auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .tete {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .titre .icon {
+        margin-bottom: 10px;
+    }
+
+    .liste ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .body {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .services h2 {
+        font-size: 28px;
+    }
+
+    .service-item {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer img {
+        margin-bottom: 10px;
+    }
 }
