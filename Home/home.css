@@ -360,6 +360,7 @@ background-color: #504f4f;
     margin-right: 30px;
 }
 
+
 }
 .courses h2{
   font-family:Arial, Helvetica, sans-serif;
@@ -452,6 +453,9 @@ background-color: #e0e0e0;
 
 .skills-cards {
 display: flex;
+flex-wrap: wrap; /* Permet de revenir à la ligne */
+padding: 20px;
+justify-content: center;
 gap: 25px;
 margin-top: 30px;
 margin-left: 45px;
@@ -468,6 +472,16 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 text-align: center;
 display: block; 
 margin: 10px 0;
+}
+
+.skill-card img{
+  width: 100%; 
+  max-width: 500%; 
+  height: auto; 
+  border: 1px solid #ddd;
+  overflow: hidden; 
+  resize: both;
+  object-fit: cover;
 }
 
 .skill-card.hidden{
