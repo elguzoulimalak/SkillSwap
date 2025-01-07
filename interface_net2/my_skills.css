@@ -326,16 +326,17 @@ body.dark-mode h1 .icon {
 
   .navbar .icon {
     margin-top: -30px;
-    margin-left: 90px;
+    margin-left: 150px;
   }
 
   .separator{
       display: none;
   }
   .icones2{
-      margin-left: 100px;
-      margin-top: -85px;
+      margin-left: 150px;
+      margin-top: -115px;
   }
+
     .cards{
         flex-direction: column; 
         align-items: flex-start; 
