@@ -19,7 +19,17 @@ element.style {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   position: relative;
 }
+.navbar .icones1 ul li a.active {
+  color: #0f518c;
+  font-size: large;
+  font-weight: bold;
+}
 
+.navbar .icones1 ul li a.active {
+  color: #0f518c;
+  font-size: large;
+  font-weight: bold;
+}
 .navbar h1{
   margin-left: 20px;
   margin-top: 25px;
@@ -158,13 +168,13 @@ body.dark-mode .slider .circle {
 }
 /* Par défaut (mode clair) */
 
-.icon {
+h1 .icon {
 content: url('/assets/swap.png'); /* image pour le mode clair */
 transition: content 0.3s ease; /* transition fluide */
 }
 
 /* Mode sombre */
-body.dark-mode .icon {
+body.dark-mode h1 .icon {
 content: url('/assets/swap-dark.png'); /* image pour le mode sombre */
 width: 140px; 
 height: 40x;
@@ -172,29 +182,6 @@ margin-right: 1px;
 margin-bottom: 9px;
 }
 
-body.dark-mode a{
-color: #ffffff;
-}
-
-body.dark-mode .card{
-border-color: #ffffff;
-}
-
-body.dark-mode .text rect{
-fill: #ffffff;
-}
-
-body.dark-mode .text path{
-fill: #ffffff;
-}
-
-body.dark-mode .text p{
-color: #ed0049;
-}
-
-body.dark-mode .tooltip-container{
-background-color: #504f4f;
-}
 .ui-switch {
   margin-top: 38px;
 }
@@ -352,333 +339,127 @@ background-color: #504f4f;
     margin-left: 100px;
     margin-top: -85px;
 }
-  .skills-cards{
+  .cards{
       flex-direction: column; /* Passe les éléments à une colonne sur petits écrans */
       align-items: flex-start; /* Aligne à gauche */
   }
-  .skill-card{
-    margin-right: 30px;
-}
 
 }
-.courses h2{
-  font-family:Arial, Helvetica, sans-serif;
-  margin-left: 20px;
-}
-.courses-bar{
-text-align: center;
-margin-top: 50px;
-display: flex;
-gap: 30px;
-margin-top:auto;
-}
-.all-courses{
-margin-top: 20px;
-display: flex;
-}
-.all-courses-button h5{
-margin-top: 4px;
-color:#000000;
-}
-.all-courses-button img{
-display: flex;
-margin-left: 97px;
-margin-top: -36px;
 
-}
-.all-courses-button{
-height: 30px;
-width: 130px;
-font-size: 15px;
-border: none;
-background-color:#0f528c75 ;
-border-radius: 30px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-border-color: black;
+header {
+  text-align: center;
+  background-color: #0f518c;
+  color: white;
+  padding: 20px 10px;
 }
 
-.all-courses-button:hover {
-background-color: #0f518c;
-}
-.all-courses-button h5:hover {
-color: #ddd;
-}
-.all-courses-all{
-display: flex;
-gap: 10px;
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-.skills-list {
-margin-top: 20px;
-font-size: 16px;
-display: none; /* Cache la liste par défaut */
+header p {
+  font-size: 1.2rem;
 }
 
-.skills-list button {
-display: flex; 
-text-align: center;
-flex-direction: column;
-padding: 8px;
-background-color: #0f528c44;
-border: 1px solid #ddd;
-margin: 5px 0;
-max-width: 200px;
-border-radius: 50px;
-color: #000;transition: color 0.3s ease, background-color 0.3s ease; /* Transition fluide */
+body.dark-mode main {
+  background-color: #0f528c04; 
+  color: #ffffff; 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Mode sombre */
-body.dark-mode .skills-list button {
-color: #fff;  /* Couleur du texte en mode sombre (blanc) */
-background-color: #0f528c;  /* Vous pouvez également ajuster la couleur de fond pour le mode sombre si nécessaire */
+body.dark-mode main h2 {
+  color: #0f518c; 
 }
 
-.skills-list button:hover {
-background-color: #e0e0e0;
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.skills-list {
+h2 {
+  color: #0f518c;
+  margin-bottom: 10px;
+}
+
+/* Informations de contact */
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Formulaire de contact */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 
-.skill-button {
-  margin-right: 10px;
-  padding: 10px 20px;
+.contact-form button {
+  padding: 10px 15px;
+  font-size: 1rem;
   color: white;
+  background-color: #0f518c;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.skills-cards {
-display: flex;
-gap: 25px;
-margin-top: 30px;
-margin-left: 45px;
+.contact-form button:hover {
+  background-color: #0f518c
 }
 
-.skill-card {
-height: 370px;
-padding: 20px;
-border-radius: 5px;
-border-style:groove;
-border-color: #ed0049;
-width: 300px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-text-align: center;
-display: block; 
-margin: 10px 0;
-}
-
-.skill-card.hidden{
-  display: none;
-}
-.skill-card img {
-border-radius: 10px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-width: 250px;
-height: 150px;
-}
-
-.skill-card h3 {
-margin: 10px 0;
-font-size: 18px;
-}
-
-.profile{
-display: flex;
-gap:10px;
-}
-.profile a{
-align-items: center;
-margin-top: 10px;
-text-decoration: none;
-color: #000;
-}
-.profile-photo img{
-width: 40px;
-height: 40px;
-margin-left: 35px;
-border-radius: 50%;
-}
-
-.tooltip-container {
-display: flex;
-align-items: center;
-width: 100px;
-margin-left: 70px;
-justify-content: center;
-position: relative;
-transition: all 0.3s;
-background-color: rgb(255, 255, 255);
-border-radius: 12px;
-cursor: pointer;
-border: 1px solid rgb(211, 211, 211);
-}
-
-.text {
-width: 100%;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
-font-size: 14px;
-font-weight: 600;
-color: rgb(0, 0, 0);
-}
-.svgIcon {
-width: 16px;
-height: auto;
-
-}
-.tooltip2 {
-position: absolute;
-top: 0;
-left: 50%;
-transform: translateX(-50%);
-padding: 0.3em 0.6em;
-opacity: 0;
-pointer-events: none;
-transition: all 0.3s;
-background-color: rgba(255, 255, 255, 0.8);
-border-radius: 12px;
-color: rgb(246, 8, 8);
-}
-
-
-
-.tooltip-container:hover .tooltip2 {
-top: 100%;
-opacity: 1;
-visibility: visible;
-pointer-events: auto;
-}
-
-
-.bouton-next {
-display: flex;
-margin-top: 25px;
-margin-left: 60px;
-justify-content: center;
---color-text: #9ee5fa;
---color-background: #353535;
---color-outline: #9ee5fa80;
---color-shadow: #00000080;
-}
-
-.next {
-display: flex;
-align-items: center;
-padding: 0px 3px;
-text-decoration: none;
-font-family: "Poppins", sans-serif;
-font-size: 25px;
-color: var(--color-text);
-background: var(--color-background);
-transition: 1s;
-border-radius: 100px;
-box-shadow: 0 0 0.2em 0 var(--color-background);
-}
-
-.next:hover,
-.next:focus {
-transition: 0.5s;
--webkit-animation: btn-content 1s;
-animation: btn-content 1s;
-outline: 0.1em solid transparent;
-outline-offset: 0.2em;
-box-shadow: 0 0 0.4em 0 var(--color-background);
-}
-
-.next .icon-arrow {
-transition: 0.5s;
-margin-right: 0px;
-transform: scale(0.6);
-}
-
-.next:hover .icon-arrow {
-transition: 0.5s;
-margin-right: 25px;
-}
-
-.icon-arrow {
-width: 20px;
-margin-left: 15px;
-position: relative;
-top: 6%;
-}
-
-/* SVG */
-#arrow-icon-one {
-transition: 0.4s;
-transform: translateX(-60%);
-}
-
-#arrow-icon-two {
-transition: 0.5s;
-transform: translateX(-30%);
-}
-
-.next:hover #arrow-icon-three {
-animation: color_anim 1s infinite 0.2s;
-}
-
-.next:hover #arrow-icon-one {
-transform: translateX(0%);
-animation: color_anim 1s infinite 0.6s;
-}
-
-.next:hover #arrow-icon-two {
-transform: translateX(0%);
-animation: color_anim 1s infinite 0.4s;
-}
-.courses-list button {
-  display: flex; 
+.footer {
   text-align: center;
-  flex-direction: column;
-  padding: 8px;
-  background-color: #0f528c44;
-  border: 1px solid #ddd;
-  margin: 5px 0;
-  max-width: 200px;
-  border-radius: 50px;
-  color: #000;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  background-color: white;
+  color: #333;
+  display: flex;
+  margin-top: 50px ;
 }
-
-.courses-list button:hover {
-  background-color: #e0e0e0;
+.footer h4{
+  text-align: center;
+  margin-left: 500px;
+  margin-top: 48px;
 }
-
-/* SVG animations */
-@keyframes color_anim {
-0% {
-  fill: white;
-}
-
-50% {
-  fill: var(--color-background);
-}
-
-100% {
-  fill: #9ee5fa;
-}
-}
-
-/* Button animations */
-@-webkit-keyframes next {
-0% {
-  outline: 0.2em solid var(--color-background);
-  outline-offset: 0;
-}
-}
-
-@keyframes next {
-0% {
-  outline: 0.2em solid var(--color-background);
-  outline-offset: 0;
+.footer img{
+  content: url('/ASSETS/swap.png');
+  width: 100px;
+  margin-left: 20px;
 }
 
 
+body.dark-mode .footer {
+  background-color: #0f528c04;
+  color: #ffffff; 
+}
+
+body.dark-mode .footer h4 {
+  color: #ffffff; 
+}
+
+body.dark-mode .footer img {
+  content: url('/ASSETS/swap-dark.png'); 
 }

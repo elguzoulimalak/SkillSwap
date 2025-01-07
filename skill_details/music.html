@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillSwap - Find Skills</title>
-    <link rel="stylesheet" href="find_skills.css">
+    <title>SkillSwap - Skill Details</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
     <div class="navbar">
         <h1 class="gradient"><a href="/Home/home.html"><img class="icon" src="/assets/swap.png" alt="Logo"></a></h1>
         
@@ -17,7 +18,7 @@
                     <li><a href="/Home/home.html"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="/interface_net2/my_skills.html"><i class="fas fa-briefcase"></i> Skills</a></li>
                     <li><a href="/interface_net2/find_skills.html" class="active"><i class="fas fa-search"></i> Find Skills</a></li>
-                    <li><a href="/interface_net/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="/interface_contact/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
         
                 </ul>
             </div> 
@@ -48,54 +49,52 @@
             </div>
         </div>
     </div>
-  <script src="script.js"></script>
+  <script src="/interface_net2/script.js"></script>
 
+    <!-- Skill Details Section -->
     <main class="main-content">
-        <section class="search-section">
-            <h2>Find Skills</h2>
-            <p>Search and explore skills offered by our community!</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for skills... (e.g., Python, Photography)">
-                <button><i class="fas fa-search"></i></button>
+        <section class="skill-details">
+            <div class="skill-header">
+                <i class="fas fa-music"></i>
+                <h2>Music</h2>
+                <p>Explore your creativity and learn the art of painting with experienced artists!</p>
             </div>
         </section>
 
-        <section class="skills-grid">
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>Programming</h3>
-                <p>Learn and master popular programming languages like Python, JavaScript, and C#.</p>
-                <a href="/skill_details/programming.html">Explore</a>
+        <!-- Users Offering the Skill -->
+        <section class="users-list">
+            <h3>Users Offering This Skill</h3>
+            <div class="user-card">
+                <div class="user-info">
+                    <img src="/assets/user1.jpg" alt="User Photo">
+                    <h4>MABROUKI Ahmed</h4>
+                    <p>Drummer with experience in jazz and rock music.</p>
+                </div>
+                <div class="user-actions">
+                    <button class="details-btn">View Profile</button>
+                </div>
             </div>
-            <div class="skill-card">
-                <i class="fas fa-camera"></i>
-                <h3>Photography</h3>
-                <p>Discover tips, tricks, and techniques to take stunning photos.</p>
-                <a href="/skill_details/photography.html">Explore</a>
+
+            <div class="user-card">
+                <div class="user-info">
+                    <img src="/assets/user2.jpg" alt="User Photo">
+                    <h4>BELRAHAL Ghita</h4>
+                    <p>Vocal coach helping you improve your singing techniques.</p>
+                </div>
+                <div class="user-actions">
+                    <button class="details-btn">View Profile</button>
+                </div>
             </div>
-            <div class="skill-card">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Painting</h3>
-                <p>Unleash your creativity with painting tutorials and expert advice.</p>
-                <a href="/skill_details/painting.html">Explore</a>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-language"></i>
-                <h3>Languages</h3>
-                <p>Learn new languages and improve your fluency in foreign dialects.</p>
-                <a href="/skill_details/languages.html">Explore</a>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-music"></i>
-                <h3>Music</h3>
-                <p>Learn how to play instruments or improve your singing techniques.</p>
-                <a href="/skill_details/music.html">Explore</a>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-bread-slice"></i>
-                <h3>Cooking</h3>
-                <p>Explore recipes and learn cooking techniques from around the world.</p>
-                <a href="/skill_details/cooking.html">Explore</a>
+
+            <div class="user-card">
+                <div class="user-info">
+                    <img src="/assets/user3.jpg" alt="User Photo">
+                    <h4>ALAMI Mehdi</h4>
+                    <p>Guitarist offering lessons for acoustic and electric guitar.</p>
+                </div>
+                <div class="user-actions">
+                    <button class="details-btn">View Profile</button>
+                </div>
             </div>
         </section>
     </main>
