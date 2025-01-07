@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: auto;
+}
+
+.tete {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.titre .icon {
+    width: 120px;
+    height: 40px;
+}
+
+.liste1 {
+    display: flex;
+    gap: 20px;
+}
+
+.liste2 {
+    display: flex;
+    gap: 10px;
+}
+
+.liste ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 2rem;
+    margin-right: 10px;
+}
+
+.navbar a, .navbar2 a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.navbar2 button {
+    border: 2px solid #0f518c;
+    border-radius: 10px;
+    background-color: #0f518c;
+    color: white;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar2 button:hover {
+    background-color: white;
+    color: #0f518c;
+}
+
+
+.temoignages-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.temoignages-section h2 {
+    font-size: 36px;
+    color: #0f518c;
+    margin-bottom: 20px;
+}
+
+.temoignages-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.temoignages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.temoignage-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.temoignage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.temoignage-card .temoignage-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.temoignage-card h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.temoignage-card i {
+    font-size: 40px;
+    color: #0f518c;
+    margin-top: 15px;
+}
+
+.footer {
+    text-align: center;
+    background-color: white;
+    color: #333;
+    display: flex;
+    margin-top: 50px ;
+}
+.footer h4{
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 48px;
+}
+.footer img{
+    content: url('/ASSETS/swap.png');
+    width: 100px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .tete {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .titre .icon {
+        margin-bottom: 10px;
+    }
+
+    .liste ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .temoignages-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .temoignage-card {
+        margin: 0 auto; 
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .temoignages-section h2 {
+        font-size: 24px; 
+    }
+
+    .temoignages-section p {
+        font-size: 14px; 
+    }
+
+    .temoignage-card {
+        padding: 15px; 
+    }
+
+    .temoignage-card .temoignage-text {
+        font-size: 14px;
+    }
+
+    .temoignage-card h4 {
+        font-size: 16px; 
+    }
+
+    .temoignage-card i {
+        font-size: 30px; 
+    }
+}
