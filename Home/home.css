@@ -341,17 +341,17 @@ background-color: #504f4f;
 }
 
 .navbar .icon {
-  margin-top: -30px;
+  margin-top: -41px;
   margin-left: 90px;
-}
-
-.separator{
-    display: none;
 }
 .icones2{
     margin-left: 100px;
-    margin-top: -85px;
+    margin-top: -115px;
 }
+.separator{
+    display: none;
+}
+
   .skills-cards{
       flex-direction: column; /* Passe les éléments à une colonne sur petits écrans */
       align-items: flex-start; /* Aligne à gauche */
