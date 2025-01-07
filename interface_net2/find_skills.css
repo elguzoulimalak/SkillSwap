@@ -1,20 +1,20 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    overflow-x:auto;
-  }
-  element.style {
-    width: 1500px;
+  font-family: Arial, sans-serif;
+  overflow-x:auto;
+}
+element.style {
+  width: 1500px;
   }
   
-  .navbar{
-    min-width: 1350px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 20px;
-    gap: 10px;
+.navbar{
+  min-width: 1350px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  gap: 10px;
     background-color: #0f528c04;
     border-radius: 5px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -74,10 +74,10 @@ body {
     align-items: center;
     gap: 10px;
   }
-  /* Par défaut (mode clair) */
+  
   li a {
-  color: #000; /* couleur des textes en mode clair (noir) */
-  transition: color 0.3s ease; /* transition fluide */
+  color: #000; 
+  transition: color 0.3s ease; 
   }
   
   body.dark-mode skill-card i{
@@ -90,16 +90,16 @@ body {
   }
   
   li a i {
-  color: #000; /* couleur des icônes en mode clair (noir) */
+  color: #000; 
   }
   
-  /* Mode sombre */
+  
   body.dark-mode li a {
-  color: #fff; /* couleur des textes en mode sombre (blanc) */
+  color: #fff; 
   }
   
   body.dark-mode li a i {
-  color: #fff; /* couleur des icônes en mode sombre (blanc) */
+  color: #fff; 
   }
   
   .icones1 i {
@@ -168,14 +168,11 @@ body {
   body.dark-mode .slider .circle {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjAiIHdpZHRoPSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMwMDAiCiAgICAgICAgZD0iTTcuNyAxMS41bC0xLjQgMy4yIDMuMyAxLjItMS4yIDMuMiAzLjItMS4yLTEuMiAzLjMtMy4yLTEuMiAxLjIgMy4ybC0xLjIgMy4zIDMuMi0xLjItMS4yIDMuMiAzLjItMS4yLTEuMiAzLjItMS4yLTMuMy0xLjItMy4ybC0xLjMgMy4ybC0xLjIgMy4yIDMuMy0xLjItMS4yIDMuMiAzLjItMS4yLTEuMiAzLjItMS4ybC0xLjMtMy4ybC0xLjItMy4yIDMuMiAxLjItMS4yIDMuMiAzLjItMS4ybC0xLjMtMy4yIDEuMi0zLjJ6IiAvPgo8L3N2Zz4="); /* Icône sombre */
   }
-  /* Par défaut (mode clair) */
   
   h1 .icon {
   content: url('/assets/swap.png'); 
-  transition: content 0.3s ease; /* transition fluide */
+  transition: content 0.3s ease; 
   }
-  
-  /* Mode sombre */
   body.dark-mode h1 .icon {
     content: url('/assets/swap-dark.png'); 
     margin-top: 9px;
@@ -347,8 +344,7 @@ body {
     }
   
   }
-  
-  /* Search Section */
+
   .search-section {
     text-align: center;
     padding: 50px 100px;
@@ -395,8 +391,7 @@ body {
     background-color: #0d4270;
     color: white;
   }
-  
-  /* Skills Grid */
+
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -480,3 +475,85 @@ body {
   body.dark-mode .footer img {
     content: url('/ASSETS/swap-dark.png'); 
   }
+
+@media screen and (max-width: 768px) {
+
+  .search-section {
+      padding: 20px;
+    }
+    .search-section h2 {
+        font-size: 28px;
+    }
+    .search-section p {
+        font-size: 16px;
+    }
+    .search-bar input {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+    .search-bar {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 20px;
+    }
+    .skill-card {
+        padding: 15px;
+    }
+    .skill-card h3 {
+        font-size: 20px;
+    }
+    .skill-card p {
+        font-size: 14px;
+    }
+    .skill-card a {
+        padding: 8px 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    .footer h4 {
+        margin: 10px 0;
+    }
+    .footer img {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .search-section h2 {
+    font-size: 24px;
+  }
+  .search-section p {
+    font-size: 14px;
+  }
+
+  .skills-grid {
+    gap: 15px;
+    padding: 10px;
+  }
+  .skill-card h3 {
+    font-size: 18px;
+  }
+  .skill-card p {
+    font-size: 12px;
+  }
+  .skill-card a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+  .footer img {
+    width: 80px;
+  }
+}
