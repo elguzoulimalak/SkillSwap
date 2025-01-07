@@ -153,20 +153,23 @@ color: #fff; /* couleur des icônes en mode sombre (blanc) */
   color: #ffffff; /* Texte clair */
 }
 
+body.dark-mode .slider .circle {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjAiIHdpZHRoPSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMwMDAiCiAgICAgICAgZD0iTTcuNyAxMS41bC0xLjQgMy4yIDMuMyAxLjItMS4yIDMuMiAzLjItMS4yLTEuMiAzLjMtMy4yLTEuMiAxLjIgMy4ybC0xLjIgMy4zIDMuMi0xLjItMS4yIDMuMiAzLjItMS4yLTEuMiAzLjItMS4yLTMuMy0xLjItMy4ybC0xLjMgMy4ybC0xLjIgMy4yIDMuMy0xLjItMS4yIDMuMiAzLjItMS4yLTEuMiAzLjItMS4ybC0xLjMtMy4ybC0xLjItMy4yIDMuMiAxLjItMS4yIDMuMiAzLjItMS4ybC0xLjMtMy4yIDEuMi0zLjJ6IiAvPgo8L3N2Zz4="); /* Icône sombre */
+}
+/* Par défaut (mode clair) */
 
 .icon {
 content: url('/assets/swap.png'); /* image pour le mode clair */
 transition: content 0.3s ease; /* transition fluide */
-
 }
 
 /* Mode sombre */
 body.dark-mode .icon {
 content: url('/assets/swap-dark.png'); /* image pour le mode sombre */
-width:220px; 
-height: 100x;
-margin-left: -12px; 
-margin-top: 15px;
+width: 140px; 
+height: 40x;
+margin-right: 1px; 
+margin-bottom: 9px;
 }
 
 body.dark-mode a{
@@ -349,19 +352,15 @@ background-color: #504f4f;
     margin-left: 100px;
     margin-top: -85px;
 }
-  .cards{
+  .skills-cards{
       flex-direction: column; /* Passe les éléments à une colonne sur petits écrans */
       align-items: flex-start; /* Aligne à gauche */
   }
-  .card{
+  .skill-card{
     margin-right: 30px;
 }
 
- 
-
 }
-
-
 .courses h2{
   font-family:Arial, Helvetica, sans-serif;
   margin-left: 20px;
@@ -410,13 +409,13 @@ display: flex;
 gap: 10px;
 }
 
-.courses-list  {
+.skills-list {
 margin-top: 20px;
 font-size: 16px;
 display: none; /* Cache la liste par défaut */
 }
 
-.courses-list button {
+.skills-list button {
 display: flex; 
 text-align: center;
 flex-direction: column;
@@ -430,24 +429,37 @@ color: #000;transition: color 0.3s ease, background-color 0.3s ease; /* Transiti
 }
 
 /* Mode sombre */
-body.dark-mode .courses-list button {
+body.dark-mode .skills-list button {
 color: #fff;  /* Couleur du texte en mode sombre (blanc) */
 background-color: #0f528c;  /* Vous pouvez également ajuster la couleur de fond pour le mode sombre si nécessaire */
 }
 
-.courses-list button:hover {
+.skills-list button:hover {
 background-color: #e0e0e0;
 }
 
+.skills-list {
+  margin-bottom: 20px;
+}
 
-.cards {
+.skill-button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.skills-cards {
 display: flex;
 gap: 25px;
 margin-top: 30px;
 margin-left: 45px;
 }
 
-.card {
+.skill-card {
 height: 370px;
 padding: 20px;
 border-radius: 5px;
@@ -456,16 +468,21 @@ border-color: #ed0049;
 width: 300px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 text-align: center;
+display: block; 
+margin: 10px 0;
 }
 
-.card img {
+.skill-card.hidden{
+  display: none;
+}
+.skill-card img {
 border-radius: 10px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 width: 250px;
 height: 150px;
 }
 
-.card h3 {
+.skill-card h3 {
 margin: 10px 0;
 font-size: 18px;
 }
@@ -666,38 +683,4 @@ animation: color_anim 1s infinite 0.4s;
 }
 
 
-}
-
-.footer {
-  text-align: center;
-  background-color: white;
-  color: #333;
-  display: flex;
-  margin-top: 50px ;
-}
-.footer h4{
-  text-align: center;
-  margin-left: 500px;
-  margin-top: 48px;
-}
-.footer img{
-  content: url('/ASSETS/swap.png');
-  width: 70px;
-  height: 50px;
-  margin-left: 20px;
-  margin-top: 36px;
-}
-
-
-body.dark-mode .footer {
-  background-color: #0f528c04;
-  color: #ffffff; 
-}
-
-body.dark-mode .footer h4 {
-  color: #ffffff; 
-}
-
-body.dark-mode .footer img {
-  content: url('/ASSETS/swap-dark.png'); 
 }

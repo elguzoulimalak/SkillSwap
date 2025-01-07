@@ -68,3 +68,171 @@ a {
 a:hover {
     color: #0c47a1;
 }
+* {
+    margin: -3px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    background-color:rgb(239, 243, 252);
+    color: #333;
+}
+.content {
+    flex: 1;
+    padding: 50px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.profile .details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile .details img {
+    width:  80px;
+    height: 80px;
+    border-radius: 50%;
+    
+}
+
+.profile .details h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f518c;
+}
+
+.profile .details p {
+    color: #5b5a5a;
+}
+
+.follow button{
+    padding: 8px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(24, 94, 18, 0.1);
+}
+
+.follow button:hover{
+    background:linear-gradient(#0f518c ,white);
+    border-color: #0f518c;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.stats .stat {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 15px;
+    border: 2px solid;
+    border-color: #0f518c;
+}
+
+.stats .stat h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #0f518c;
+}
+
+.stats .stat p {
+    color: #777;
+    font-size: 14px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card1 {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.card .badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card .badge img {
+    width: 60px;
+    height: 60px;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.link img{
+    width: 40px;
+    height: 40px;
+}
+.link a{
+    text-decoration: none;
+    color: #0f518c;
+}
+
+  .metric {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .metric-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0f518c;
+    margin-bottom: 10px;
+  }
+  
+  .metric-description {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+  }
+  
