@@ -83,7 +83,15 @@ html, body {
   background-color: #444;
   align-self: flex-start;
 }
+.chat-header-info .profile-link {
+  text-decoration: none; /* Removes underline from the link */
+  color: #fff;           /* Matches the existing text color */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
 
+.chat-header-info .profile-link:hover {
+  color: #0078d4; /* Changes color on hover to blue for interactivity */
+}
 
 
 .message .time {
