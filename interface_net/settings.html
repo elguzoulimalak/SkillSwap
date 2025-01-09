@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - SkillSwap</title>
-    <link rel="stylesheet" href="contact2.css">
+    <title>Settings - SkillSwap</title>
+    <link rel="stylesheet" href="settings.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
@@ -24,7 +24,7 @@
             </div> 
             <div class="separator">
                 <li></li>
-            </div>
+            </div>5
             <div class="icones2">
                 <label class="ui-switch">
                 <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
@@ -33,58 +33,56 @@
                 </div>
                 </label>
                 <li class="icone"><i class="fas fa-bell"></i><span class="tooltip">Notifications</span></li>
-                <li class="icone" onclick="toggleMenu()">
-                    <i class="fas fa-user"></i>
-                    <span class="tooltip">My profile</span>
-                </li>
-                <div class="menu" id="menu">
-                    <ul>
-                        <h4>Doha Bennani</h4>
-                        <li><a href="/User profile/user.html">My account</a></li>
-                        <li><a href="../interface_net/settings.html">Settings</li></a>
-                        <li><a href="../interface_net/FAQ.html">Help</li></a>
-                        <li><a href="/interface_logging/connexion.html">Logout</li></a>
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </div>
-  <script src="script.js"></script>
-    <header>
-        <h1>SkillSwap - Contact us</h1>
-        <p>A question or a specific need ? We are here to help you !</p>
-    </header>
-
+    <script src="script.js"></script>
     <main>
-        <section class="contact-info">
-            <h2>Contact information</h2>
-            <ul>
-                <li><strong>Email :</strong> support@skillswap.com</li>
-                <li><strong>Phone :</strong> +212 6 99 99 99 99</li>
-                <li><strong>Adress :</strong> Fès, Maroc</li>
-            </ul>
-        </section>
-
+        <div class="Profile">
+            <h2>Profile</h2>
+            <div class="separator2">
+                <li></li>
+            </div>
         <section class="contact-form">
-            <h2>Send us a message</h2>
+            <h2>Public Profile</h2>
             <form action="submit_form.php" method="post">
-                <label for="name">Name :</label>
+                <label for="name">Public name :</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required>
 
                 <label for="email">Email :</label>
                 <input type="email" id="email" name="email" placeholder="Your email" required>
 
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                <label for="name">Education :</label>
+                <input type="text" id="name" name="name" placeholder="Your Degree" required>
 
-                <button type="submit">Send</button>
+                <label for="name">Work Experience :</label>
+                <input type="text" id="name" name="name" placeholder="Your Experience" required>
+
+                <label for="message">Skills :</label>
+                <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
             </form>
         </section>
-    </main>
+            <div class="separator2">
+                <li></li>
+            </div>
+            <h2>Private Profile</h2>
+            <div class="edit">            
+                <a href="../Add_editprofile/edit.html">Profile Edition</a>
+                <a href="../interface_net/privacy.html">Privacy Terms</a>
+                <a href="../interface_logging/connexion.html">Log out</a>
+            </div>
+        </div>    
+        <div class="separator2">
+            <li></li>
+        </div>
+        <div class="Help">
+            <h2>If you need help</h2>
+        </div>
+        <div class="edit">            
+            <a href="../interface_net2/contact2.html">Contact us</a>
+            <a href="../interface_net/FAQ.html">FAQ</a>
+        </div>
 
-    <div class="footer">
-        <img  src="/assets/swap.png" alt="">
-        <h4>©  2025 SkillSwap. All Rights Reserved.</h4>
-    </div>
-</body>
-</html>
+    </main>
+    </body>
