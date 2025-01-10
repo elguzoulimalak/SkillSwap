@@ -1,9 +1,9 @@
 function toggleCourses() {
   const coursesList = document.getElementById('skills-list'); 
   if (coursesList.style.display === 'block') {
-      coursesList.style.display = 'none'; // Show the list
+      coursesList.style.display = 'none'; 
   } else {
-      coursesList.style.display = 'block'; // Hide the list
+      coursesList.style.display = 'block'; 
   }
 }
 
@@ -14,12 +14,6 @@ function toggleMenu() {
 
 
 const toggleSwitch = document.getElementById("dark-mode-toggle");
-
-// On page load, check localStorage for mode preference
-if (localStorage.getItem("dark-mode") === "enabled") {
-  document.body.classList.add("dark-mode");
-  toggleSwitch.checked = true;
-}
 
 // Add an event listener to toggle dark mode
 toggleSwitch.addEventListener("change", () => {
