@@ -136,6 +136,7 @@ button {
 .submit{
   display: flex;
   flex-direction: row;
+justify-content: space-between;
 }
 .submit button {
   background-color: #0f518c;
@@ -144,14 +145,15 @@ button {
   cursor: pointer;
   padding: 8px 12px;
   font-size: 14px;
-  width: 200px;
-  margin-left: 300px;
+  width: 150px;
 }
 .submit .button1{
   margin-left: 45px;
+
 }
 .submit .button2{
 background-color: #0f518c;
+margin-right: 20px;
 }
 button:hover {
   background-color: #ed0049;
@@ -372,4 +374,47 @@ body.dark-mode .menu a{
 display: flex;
 gap: 30px;
 margin-right: 50px;
+}
+
+@media screen and (max-width: 450px) {
+  body{
+    background-color: #f0f0f0;
+    overflow-x:hidden;
+ }
+.icones2 {
+  margin-left: 195px;
+  margin-top: -100px;
+}
+.navbar {
+    min-width: 500px;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 90px;
+}
+
+
+
+}
+@media screen and (min-width: 500px) and (max-width: 1024px){
+  body{
+    background-color: #f0f0f0;
+    overflow-x:hidden;
+}
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
+}
+
+.navbar .icon {
+  margin-left: 380px;
+}
+
+.icones2{
+    margin-top: -100px;
+    margin-left: 760px;
+}
+
+
+
 }

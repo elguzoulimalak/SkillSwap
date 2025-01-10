@@ -312,7 +312,7 @@ element.style {
   .menu ul li a:hover {
     color: #0f518c; 
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     body{
       background-color: #f0f0f0;
       overflow-x:hidden;
@@ -345,6 +345,12 @@ element.style {
   
   }
 
+  @media screen and (min-width: 500px) and (max-width: 1024px){
+
+    .icones{
+      margin-right: 260px;
+    }
+  }
   .search-section {
     text-align: center;
     padding: 50px 100px;

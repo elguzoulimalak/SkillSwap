@@ -312,12 +312,14 @@ body.dark-mode h1 .icon {
       overflow-x:hidden;
   }
   .icones1 {
-      display: none;
+    margin-left: 40px;
+    margin-top: -78px;
   }
   .navbar {
+      min-width: 450px;
       flex-direction: column;
       align-items: flex-start;
-      height: 150px;
+      height: 230px;
   }
   
   .navbar .icon {
@@ -325,19 +327,57 @@ body.dark-mode h1 .icon {
     margin-left: 90px;
   }
   
+  .icones2{
+      margin-top: -130px;
+      margin-left: -270px;
+  }
   .separator{
       display: none;
-  }
-  .icones2{
-      margin-left: 100px;
-      margin-top: -85px;
   }
     .cards{
         flex-direction: column; /* Passe les éléments à une colonne sur petits écrans */
         align-items: flex-start; /* Aligne à gauche */
     }
-  
+    .skill-details{
+    width: 390px;
+    }
+    .user-card{
+      width: 400px;
+      }
+      .footer{
+        width: 550px;
+      }
+     
   }
+    
+  @media screen and (min-width: 500px) and (max-width: 1024px){
+    body{
+      background-color: #f0f0f0;
+      overflow-x:hidden;
+  }
+  .icones1 {
+    margin-left: 120px;
+    margin-top: -78px;
+  }
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 180px;
+  }
+  
+  .navbar .icon {
+    margin-top: -30px;
+    margin-left: 380px;
+  }
+  
+  .icones2{
+      margin-top: -70px;
+      margin-left: 100px;
+  }
+  .separator{
+      display: none;
+  }
+}
 
 .main-content {
     padding: 30px;
@@ -447,6 +487,9 @@ body.dark-mode .details-btn:hover {
     color: #555;
 }
 
+a{
+  text-decoration: none;
+}
 .user-actions {
     display: flex;
     gap: 10px;
