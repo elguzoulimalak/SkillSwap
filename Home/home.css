@@ -2,9 +2,7 @@ body {
   font-family: Arial, sans-serif;
   overflow-x:auto;
 }
-element.style {
-  width: 1500px;
-}
+
 .contact-button {
   
   padding: 11px 20px;
@@ -146,8 +144,6 @@ color: #fff; /* couleur des icônes en mode sombre (blanc) */
   text-decoration: none;
   color:#0f518c ;
   font-size: 16px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 10px;
 }
@@ -176,7 +172,6 @@ color: #fff; /* couleur des icônes en mode sombre (blanc) */
 body.dark-mode .slider .circle {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjAiIHdpZHRoPSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMwMDAiCiAgICAgICAgZD0iTTcuNyAxMS41bC0xLjQgMy4yIDMuMyAxLjItMS4yIDMuMiAzLjItMS4yLTEuMiAzLjMtMy4yLTEuMiAxLjIgMy4ybC0xLjIgMy4zIDMuMi0xLjItMS4yIDMuMiAzLjItMS4yLTEuMiAzLjItMS4yLTMuMy0xLjItMy4ybC0xLjMgMy4ybC0xLjIgMy4yIDMuMy0xLjItMS4yIDMuMiAzLjItMS4yLTEuMiAzLjItMS4ybC0xLjMtMy4ybC0xLjItMy4yIDMuMiAxLjItMS4yIDMuMiAzLjItMS4ybC0xLjMtMy4yIDEuMi0zLjJ6IiAvPgo8L3N2Zz4="); /* Icône sombre */
 }
-/* Par défaut (mode clair) */
 
 .icon {
 content: url('/assets/swap.png'); /* image pour le mode clair */
@@ -313,7 +308,6 @@ background-color: #504f4f;
   position: absolute;
   top: 90px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
   flex-direction: column;
   margin-left: 50px;
   display: none; /* Cache la liste par défaut */
