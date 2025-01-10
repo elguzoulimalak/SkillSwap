@@ -19,7 +19,7 @@ element.style {
   transition: background-color 0.3s ease;
   margin-left: 124px; /* Moves it slightly to the right */
   position: relative; /* Enables the use of top and left for fine adjustments */
-  top: -45px; /* Moves it slightly upward */
+  top: -42px;
 }
 
 .contact-button:hover {
